@@ -1,0 +1,73 @@
+
+
+author = "Toaster - BTS";
+onLoadName = "Kill the Extremist";
+onLoadMission = "“Diplomacia é a arte de mandar as pessoas para o inferno de uma maneira em que elas perguntem qual é o melhor caminho.” - Winston Churchill";
+loadScreen = "signs\cia.paa";
+overviewPicture = "signs\cia.paa";
+overviewText = "“Diplomacia é a arte de mandar as pessoas para o inferno de uma maneira em que elas perguntem qual é o melhor caminho.” - Winston Churchill";
+respawn = 3;
+respawndelay = 10;
+disableChannels[]={0,1,2,3,4};
+enableDebugConsole = 1;
+DisabledAI = true;
+//Limpador de cadaveres do mapa
+corpseLimit = 15; //Limite de cadaver (Default 15)
+corpseRemovalMinTime = 60; //seconds (recomendo 180secs, que é 3 minutos)
+corpseRemovalMaxTime = 120; //seconds (recomendo 300secs, que é 5 minutos)
+//Limpador de carcassas do mapa (se aplica a qualquer veiculo destruido)
+wreckLimit = 10; //Default value: 15
+wreckRemovalMinTime = 300; //seconds (recomendo 180secs, que é 3 minutos)
+wreckRemovalMaxTime = 360; //seconds (recomendo 300secs, que é 5 minutos)
+
+
+#include "scripts\toastOpsat.hpp"
+
+
+
+class Header
+{
+	gameType = Coop;
+	minPlayers = 1;
+	maxPlayers = 50;
+};
+
+class CfgFunctions
+{
+    #include "LVR\functions\functions.hpp"
+};
+
+
+
+class CfgMusic
+{
+	tracks[]={intro_bts};
+
+	class intro_bts
+	{
+		name = "intro_bts";
+		sound[] = {\music\intro.ogg, db+2, 1.0};
+        };
+
+};
+
+class CfgDebriefing
+{
+	class End1
+	{
+		title = "Fracasso!";
+		subtitle = "Seu esquadrão foi eliminado.";
+		description = "O governo alega não ter conhecimento de você e de sua tropa.";
+		pictureBackground = "signs\logo.paa";
+		pictureColor[] = {0.0,0.3,0.6,1};
+	};
+	class End2
+	{
+		title = "Sucesso!";
+		subtitle = "Completou a extração.";
+		description = "Seu esquadrão saiu do país, evitando assim uma crise diplomática";
+		pictureBackground = "signs\logo.paa";
+		pictureColor[] = {0.0,0.3,0.6,1};
+	};
+};
+
