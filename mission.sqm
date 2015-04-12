@@ -140,7 +140,6 @@ class Mission
 		"A3_Structures_F_Mil_Helipads",
 		"A3_Structures_F_EPB_Civ_Dead",
 		"A3_Soft_F_SUV",
-		"blx_ridgback",
 		"PG_Services_PMC_vehicles",
 		"aia_bohemia_config"
 	};
@@ -4241,7 +4240,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=432;
+		items=430;
 		class Item0
 		{
 			position[]={1571.8269,293.98999,6896.0532};
@@ -8779,28 +8778,26 @@ class Mission
 		};
 		class Item422
 		{
-			position[]={4773.1445,6,1066.4657};
-			azimut=-341.35599;
+			position[]={4762.7227,6,1097.9617};
+			azimut=-522.47632;
 			id=575;
 			side="EMPTY";
-			vehicle="blx_ridgback_HMG_D";
+			vehicle="PMC_Offroad_Transport";
 			skill=0.60000002;
-			text="ss1";
 		};
 		class Item423
 		{
-			position[]={4777.6274,6,1079.343};
-			azimut=-341.35599;
+			position[]={4768.2061,6,1097.5624};
+			azimut=-525.56763;
 			id=576;
 			side="EMPTY";
-			vehicle="blx_ridgback_HMG_D";
+			vehicle="PMC_Offroad_Transport";
 			skill=0.60000002;
-			text="ss2";
 		};
 		class Item424
 		{
-			position[]={4762.7227,6,1097.9617};
-			azimut=-522.47632;
+			position[]={4773.687,6,1096.5345};
+			azimut=-523.41718;
 			id=577;
 			side="EMPTY";
 			vehicle="PMC_Offroad_Transport";
@@ -8808,67 +8805,49 @@ class Mission
 		};
 		class Item425
 		{
-			position[]={4768.2061,6,1097.5624};
-			azimut=-525.56763;
+			position[]={4762.6382,6,1059.2144};
+			azimut=-269.21408;
 			id=578;
 			side="EMPTY";
-			vehicle="PMC_Offroad_Transport";
+			vehicle="PMC_Offroad_Armed";
 			skill=0.60000002;
 		};
 		class Item426
 		{
-			position[]={4773.687,6,1096.5345};
-			azimut=-523.41718;
+			position[]={4762.6387,6,1056.0155};
+			azimut=-269.21408;
 			id=579;
 			side="EMPTY";
-			vehicle="PMC_Offroad_Transport";
+			vehicle="PMC_Offroad_Armed";
 			skill=0.60000002;
 		};
 		class Item427
 		{
-			position[]={4762.6382,6,1059.2144};
-			azimut=-269.21408;
-			id=580;
-			side="EMPTY";
-			vehicle="PMC_Offroad_Armed";
-			skill=0.60000002;
-		};
-		class Item428
-		{
-			position[]={4762.6387,6,1056.0155};
-			azimut=-269.21408;
-			id=581;
-			side="EMPTY";
-			vehicle="PMC_Offroad_Armed";
-			skill=0.60000002;
-		};
-		class Item429
-		{
 			position[]={4780.521,6,1056.7161};
 			azimut=330;
-			id=582;
+			id=580;
 			side="EMPTY";
 			vehicle="Box_NATO_AmmoVeh_F";
 			lock="UNLOCKED";
 			skill=0.60000002;
 			init="_dummy = this execvm ""scripts\medico.sqf""; this allowDammage false;";
 		};
-		class Item430
+		class Item428
 		{
 			position[]={4780.4585,6,1052.4012};
 			azimut=330;
-			id=583;
+			id=581;
 			side="EMPTY";
 			vehicle="Box_NATO_AmmoVeh_F";
 			lock="UNLOCKED";
 			skill=0.60000002;
 			init="_dummy = this execvm ""scripts\acre.sqf""; this allowDammage false;";
 		};
-		class Item431
+		class Item429
 		{
 			position[]={4765.4268,6,1069.1066};
 			azimut=113.20431;
-			id=584;
+			id=582;
 			side="EMPTY";
 			vehicle="MASH_EP1";
 			lock="UNLOCKED";
