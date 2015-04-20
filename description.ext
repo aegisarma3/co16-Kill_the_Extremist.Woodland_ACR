@@ -28,7 +28,7 @@ class Header
 {
 	gameType = Coop;
 	minPlayers = 1;
-	maxPlayers = 50;
+	maxPlayers = 18;
 };
 
 // class CfgFunctions
