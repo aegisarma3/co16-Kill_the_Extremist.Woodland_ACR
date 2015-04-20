@@ -71,7 +71,10 @@ class Mission
 		"A3_Data_F_Curator_Virtual",
 		"alive_sys_data",
 		"alive_mil_ied",
-		"A3_Boat_F_Boat_Armed_01"
+		"A3_Boat_F_Boat_Armed_01",
+		"rhsusf_vehicles",
+		"rhsusf_c_hmmwv",
+		"rhsusf_c_rg33"
 	};
 	addOnsAuto[]=
 	{
@@ -142,6 +145,9 @@ class Mission
 		"A3_Structures_F_EPB_Civ_Dead",
 		"A3_Soft_F_SUV",
 		"PG_Services_PMC_vehicles",
+		"rhsusf_c_hmmwv",
+		"rhsusf_vehicles",
+		"rhsusf_c_rg33",
 		"aia_bohemia_config"
 	};
 	randomSeed=15990486;
@@ -4241,7 +4247,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=428;
+		items=430;
 		class Item0
 		{
 			position[]={1571.8269,293.98999,6896.0532};
@@ -8793,44 +8799,66 @@ class Mission
 		};
 		class Item424
 		{
-			position[]={4762.6382,6,1059.2144};
-			azimut=-269.21408;
-			id=577;
-			side="EMPTY";
-			vehicle="PMC_Offroad_Armed";
-			skill=0.60000002;
-		};
-		class Item425
-		{
-			position[]={4762.6387,6,1056.0155};
-			azimut=-269.21408;
-			id=578;
-			side="EMPTY";
-			vehicle="PMC_Offroad_Armed";
-			skill=0.60000002;
-		};
-		class Item426
-		{
 			position[]={4780.0942,6,1057.036};
 			azimut=330;
-			id=579;
+			id=577;
 			side="EMPTY";
 			vehicle="Box_NATO_AmmoVeh_F";
 			lock="UNLOCKED";
 			skill=0.60000002;
 			init="_dummy = this execvm ""scripts\medico.sqf""; this allowDammage false;";
 		};
-		class Item427
+		class Item425
 		{
 			position[]={4765.4268,6,1069.1066};
 			azimut=113.20431;
-			id=580;
+			id=578;
 			side="EMPTY";
 			vehicle="MASH_EP1";
 			lock="UNLOCKED";
 			skill=0.60000002;
 			syncId=7;
 			synchronizations[]={5};
+		};
+		class Item426
+		{
+			position[]={4764.748,6,1059.51};
+			azimut=425.31577;
+			special="NONE";
+			id=579;
+			side="EMPTY";
+			vehicle="rhsusf_m1025_w_m2";
+			skill=0.2;
+		};
+		class Item427
+		{
+			position[]={4764.8623,6,1055.5912};
+			azimut=424.81448;
+			special="NONE";
+			id=580;
+			side="EMPTY";
+			vehicle="rhsusf_m1025_w_m2";
+			skill=0.2;
+		};
+		class Item428
+		{
+			position[]={4772.415,6,1064.3911};
+			azimut=380.858;
+			special="NONE";
+			id=581;
+			side="EMPTY";
+			vehicle="rhsusf_rg33_m2_wd";
+			skill=0.2;
+		};
+		class Item429
+		{
+			position[]={4776.1245,6,1074.7504};
+			azimut=380.858;
+			special="NONE";
+			id=582;
+			side="EMPTY";
+			vehicle="rhsusf_rg33_m2_wd";
+			skill=0.2;
 		};
 	};
 	class Markers

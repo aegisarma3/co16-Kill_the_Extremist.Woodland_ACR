@@ -1,9 +1,9 @@
 // Script pra limpar lixo da caixa
 
 if (isServer) then {
-	clearweaponcargoGlobal _this;
-	clearmagazinecargoGlobal _this;
-	clearitemcargoGlobal _this;
+	clearweaponcargoGlobal lixo_blufor;
+	clearmagazinecargoGlobal lixo_blufor;
+	clearitemcargoGlobal lixo_blufor;
 }
 
 
