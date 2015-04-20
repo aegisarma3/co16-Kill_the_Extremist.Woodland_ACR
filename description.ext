@@ -1,6 +1,6 @@
 
 
-author = "Toaster - BTS";
+author = "Toaster[AEGIS]";
 onLoadName = "Kill the Extremist";
 onLoadMission = "“Diplomacia é a arte de mandar as pessoas para o inferno de uma maneira em que elas perguntem qual é o melhor caminho.” - Winston Churchill";
 loadScreen = "signs\cia.paa";
@@ -8,7 +8,6 @@ overviewPicture = "signs\cia.paa";
 overviewText = "“Diplomacia é a arte de mandar as pessoas para o inferno de uma maneira em que elas perguntem qual é o melhor caminho.” - Winston Churchill";
 respawn = 3;
 respawndelay = 10;
-disableChannels[]={0,1,2,3,4};
 enableDebugConsole = 1;
 DisabledAI = true;
 //Limpador de cadaveres do mapa
@@ -32,24 +31,24 @@ class Header
 	maxPlayers = 50;
 };
 
-class CfgFunctions
-{
-    #include "LVR\functions\functions.hpp"
-};
+// class CfgFunctions
+// {
+//     #include "LVR\functions\functions.hpp"
+// };
 
 
 
-class CfgMusic
-{
-	tracks[]={intro_bts};
+// class CfgMusic
+// {
+// 	tracks[]={intro_bts};
 
-	class intro_bts
-	{
-		name = "intro_bts";
-		sound[] = {\music\intro.ogg, db+2, 1.0};
-        };
+// 	class intro_bts
+// 	{
+// 		name = "intro_bts";
+// 		sound[] = {\music\intro.ogg, db+2, 1.0};
+//         };
 
-};
+// };
 
 class CfgDebriefing
 {

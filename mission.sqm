@@ -59,7 +59,6 @@ class Mission
 		"caf_ag_Zeus",
 		"caf_ag_faction_afr_p",
 		"A3_Modules_F_Curator_Curator",
-		"blx_ridgback",
 		"PG_Services_PMC_vehicles",
 		"cse_sys_medical",
 		"cse_sys_equipment",
@@ -71,7 +70,8 @@ class Mission
 		"cse_sys_advanced_interaction",
 		"A3_Data_F_Curator_Virtual",
 		"alive_sys_data",
-		"alive_mil_ied"
+		"alive_mil_ied",
+		"A3_Boat_F_Boat_Armed_01"
 	};
 	addOnsAuto[]=
 	{
@@ -82,7 +82,7 @@ class Mission
 		"A3_Characters_F_OPFOR",
 		"a3_characters_f",
 		"caf_ag_Zeus",
-		"caf_ag_faction_afr_p",
+		"caf_ag_faction_eeur_r",
 		"caf_ag_vehicles_eeur_r",
 		"alive_sys_weather",
 		"A3_Characters_F_BLUFOR",
@@ -133,6 +133,7 @@ class Mission
 		"A3_Structures_F_EPB_Items_Vessels",
 		"A3_Structures_F_Civ_Market",
 		"A3_Boat_F_Boat_Transport_01",
+		"A3_Boat_F_Boat_Armed_01",
 		"aia_misc_e_config",
 		"aia_misc3_config",
 		"CABuildings2_Misc_Cargo",
@@ -327,7 +328,7 @@ class Mission
 						items=9;
 						class Item0
 						{
-							value="true";
+							value="false";
 							parentCls="ALiVE_mil_OPCOM";
 							typeName="debug";
 						};
@@ -4173,7 +4174,7 @@ class Mission
 						items=9;
 						class Item0
 						{
-							value="1";
+							value="0";
 							parentCls="ALiVE_mil_ied";
 							typeName="debug";
 						};
@@ -8126,12 +8127,12 @@ class Mission
 		};
 		class Item355
 		{
-			position[]={4771.1167,-0.13306452,933.75043};
-			azimut=359.16541;
+			position[]={4772.5869,-0.01664334,928.90588};
+			azimut=359.16501;
 			offsetY=0.60311198;
 			id=508;
 			side="EMPTY";
-			vehicle="B_Boat_Transport_01_F";
+			vehicle="B_Boat_Armed_01_minigun_F";
 			skill=0.2;
 		};
 		class Item356
@@ -8146,12 +8147,12 @@ class Mission
 		};
 		class Item357
 		{
-			position[]={4777.6392,0.044967104,934.1579};
-			azimut=359.16541;
+			position[]={4780.4697,-0.015677283,929.1499};
+			azimut=359.16501;
 			offsetY=0.60311198;
 			id=510;
 			side="EMPTY";
-			vehicle="B_Boat_Transport_01_F";
+			vehicle="B_Boat_Armed_01_minigun_F";
 			skill=0.2;
 		};
 		class Item358
