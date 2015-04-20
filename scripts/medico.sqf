@@ -18,18 +18,17 @@ if (isServer) then {
   _this additemcargoGlobal ["cse_chestseal",200];
   _this additemcargoGlobal ["cse_epinephrine",200];
   _this additemcargoGlobal ["cse_plasma_iv_250",200];
-  _this additemcargoGlobal ["cse_itemHelmetCamera_W",200];
+
   _this additemcargoGlobal ["cse_saline_iv",200];
   _this additemcargoGlobal ["cse_blood_iv_250",200];
-  _this additemcargoGlobal ["cse_earplugs_electronic",200];
-  _this additemcargoGlobal ["cse_earplugs",200];
+
   _this additemcargoGlobal ["cse_bandage_basic",200];
   _this additemcargoGlobal ["cse_blood_iv",200];
   _this additemcargoGlobal ["cse_surgical_kit",10];
   _this additemcargoGlobal ["cse_packing_bandage",200];
   _this additemcargoGlobal ["cse_quikclot",200];
-  _this additemcargoGlobal ["cse_Keycuffs",200];
-  _this additemcargoGlobal ["cse_ab_Kestrel4500",10];
+
+
   _this additemcargoGlobal ["cse_plasma_iv_500",200];
   _this additemcargoGlobal ["cse_bandageElastic",200];
   _this additemcargoGlobal ["cse_tourniquet",200];

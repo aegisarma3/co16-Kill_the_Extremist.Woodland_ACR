@@ -1,10 +1,10 @@
 ////////////////// BASE OPFOR
 
 // HQ
-_pos = [1541.950806,6959.0795898,-0.136017];
-_object = createVehicle ["Land_A_Office01", _pos, [], 0, "CAN_COLLIDE"];
-_object setDir 236;
-_object setPosATL _pos;
+// _pos = [1541.950806,6959.0795898,-0.136017];
+// _object = createVehicle ["Land_A_Office01", _pos, [], 0, "CAN_COLLIDE"];
+// _object setDir 236;
+// _object setPosATL _pos;
 
 // FIM HQ
 

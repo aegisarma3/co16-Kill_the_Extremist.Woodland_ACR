@@ -1,21 +1,14 @@
 if ((!isServer) && (player != player)) then {waitUntil {player == player};}; // Player sync
 
-// ***************************************************************************************
-// BREAK * BREAK * BREAK * BREAK * BREAK * BREAK * BREAK * BREAK * BREAK * BREAK * BREAK *
-// ***************************************************************************************
 
-
-// Sincroniza essa porcaria
-//[] execVM "scripts\jip.sqf";
 enableSaving [false,false];
 
-
-//execVM "initIntro.sqf";
+// Inicio de sequencia de scripts para dar vida ao mapa
 execVM "tpw.sqf";
-setTerrainGrid 25;
-[8,true,true,12] execFSM "scripts\timeModule.fsm";
+// Fim da sequencia
 
 
+// Deixa o marcador de evacuacao transparente
 "evac" setMarkerAlpha 0;
 
 
@@ -37,17 +30,8 @@ setTerrainGrid 25;
 
 ]]  execVM "scripts\shk_taskmaster.sqf";
 
+// Adiciona a acao de coletar inteligencia na caixa ao lado da posicao do mapa
 intel_dropbox addAction ["Coletar inteligência",{["scripts\mission\laptop.sqf","BIS_fnc_execVM",true,false] spawn BIS_fnc_MP;},"",1,true,true,"","(_target distance _this) < 2"];
-
-
-
-
-
-
-
-
-
-
 
 
 /*Logistica - Inicio*/
@@ -55,47 +39,9 @@ intel_dropbox addAction ["Coletar inteligência",{["scripts\mission\laptop.sqf",
 /*Logistica - Fim*/
 
 
-// Coloca AGM nos carros de policia
-clearMagazineCargoGlobal caixa_arsenal;
-clearWeaponCargoGlobal caixa_arsenal;
-clearItemCargoGlobal caixa_arsenal;
-clearBackpackCargoGlobal caixa_arsenal;
-clearMagazineCargoGlobal caixa_arsenal;
-clearWeaponCargoGlobal caixa_arsenal;
-clearItemCargoGlobal caixa_arsenal;
-clearBackpackCargoGlobal caixa_arsenal;
-
-
-
-
-
-caixa_arsenal additemCargoGlobal ["AGM_EarBuds", 200];
-caixa_arsenal additemCargoGlobal ["AGM_Bandage", 400];
-caixa_arsenal additemCargoGlobal ["AGM_Morphine", 400];
-caixa_arsenal additemCargoGlobal ["AGM_Epipen", 400];
-caixa_arsenal additemCargoGlobal ["AGM_Bloodbag", 400];
-caixa_arsenal additemCargoGlobal ["AGM_Clacker", 200];
-caixa_arsenal additemCargoGlobal ["AGM_DefusalKit", 200];
-caixa_arsenal additemCargoGlobal ["AGM_MapTools", 200];
-caixa_arsenal additemCargoGlobal ["AGM_SpareBarrel", 200];
-caixa_arsenal additemCargoGlobal ["AGM_ItemKestrel", 200];
-caixa_arsenal additemCargoGlobal ["AGM_muzzle_mzls_H", 200];
-caixa_arsenal additemCargoGlobal ["AGM_muzzle_mzls_B", 200];
-caixa_arsenal additemCargoGlobal ["AGM_muzzle_mzls_L", 200];
-caixa_arsenal additemCargoGlobal ["AGM_muzzle_mzls_smg_01", 200];
-caixa_arsenal additemCargoGlobal ["AGM_muzzle_mzls_smg_02", 200];
-caixa_arsenal additemCargoGlobal ["AGM_M84", 200];
-
-
 /* Editor 3D - here is the code required to spawn captured objects - Inicio*/
 if (isServer) then {[] call compile preprocessfilelinenumbers "scripts\editor\data.sqf";};
 /* Editor 3D - here is the code required to spawn captured objects - Fim*/
-
-
-
-
-
-
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -109,25 +55,3 @@ sleep 1;
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////// SERVER SIDE A PARTIR DESTA LINHA  /////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

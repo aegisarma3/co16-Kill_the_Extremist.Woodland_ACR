@@ -8,15 +8,14 @@
 */
 
 if (isServer) then {
-  clearweaponcargoGlobal _this;
-  clearmagazinecargoGlobal _this;
-  clearitemcargoGlobal _this;
+	clearweaponcargoGlobal _this;
+	clearmagazinecargoGlobal _this;
+	clearitemcargoGlobal _this;
 
-  _this additemcargoGlobal ["ACRE_PRC152",100];
-  _this additemcargoGlobal ["ACRE_PRC117F",100];
-_this additemcargoGlobal ["cse_ab_Kestrel4500",10];
-_this additemcargoGlobal ["cse_ab_ATragMX",10];
-_this additemcargoGlobal ["cse_HIIDE",10];
-   
- 
+	_this additemcargoGlobal ["ACRE_PRC152",100];
+	_this additemcargoGlobal ["ACRE_PRC117F",100];
+	_this additemcargoGlobal ["cse_ab_Kestrel4500",10];
+	_this additemcargoGlobal ["cse_ab_ATragMX",10];
+	_this additemcargoGlobal ["cse_Keycuffs",200];
+	_this additemcargoGlobal ["cse_itemHelmetCamera_W",200];
 };

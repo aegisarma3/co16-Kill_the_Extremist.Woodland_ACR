@@ -26,5 +26,5 @@ _object setPosATL _pos;
 
 respawn_west setpos [ getPos respawn_west select 0, getPos respawn_west select 1, 0.603112];
 
-lixo_blufor addAction ["Limpar lixo",{["scripts\trash.sqf","BIS_fnc_execVM",true,false] spawn BIS_fnc_MP;}];
+lixo_blufor addAction ["Limpar lixo",{["scripts\lixo.sqf","BIS_fnc_execVM",true,false] spawn BIS_fnc_MP;}];
 
